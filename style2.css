@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+html {
+    background: url('img/fundo.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #08558b;
+}
+
+a{
+    font-size: .8rem;
+}
+
+a:hover{
+    color: #08558b;
+}
+
+/* CONTAINER LOGIN */
+#login-container {
+    background-color: #fff;
+    width: 25rem;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    text-align: center;
+}
+
+#login-container h1 {
+    font-family: sketchup;
+    font-size: 3rem;
+    color: #086B9C;
+    text-shadow: 2px 2px #000;
+}
+
+@media (max-width: 768px) {
+    #login-container {
+        width: 21rem;
+       
+    }
+}
+
+/* FORMULARIO */
+form{
+    margin: 2.5rem 0;
+    
+}
+
+label, input {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+    color: #086B9C;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: .625rem;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+button[type="submit"] {
+
+    padding: .625rem;
+    font-size: .8rem;
+    margin-bottom: 1.25rem;
+    background-color: #08558b57;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    margin: 1.8rem auto 0;
+    cursor: pointer;
+    width: 40%;
+    transition: width 1.5s;
+}
+
+button[type="submit"]:hover {
+   background-color: #08558b; 
+   width: 100%;
+}
+
+.loading {
+    width: 25px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+/* SOCIAL CONTAINER */
+#social-container, #social-container p{
+    margin-bottom: 1.25rem;
+}
+
+#social-container i {
+    /* background-color: aqua; */
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.fa-facebook-f {
+    background-color: #1F7BF2;
+}
+
+.fa-linkedin {
+    background-color: #086B9C;
+}
+
+.fa-whatsapp {
+    background: linear-gradient(to bottom,#5FF475, #38C33A);
+}
+
+#register-container p{
+    margin-bottom: .6rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.alert {
+    background-color: #131212fa;
+    width: 70vw;
+    height: 50vh;
+
+    position: absolute;
+
+    top: 10rem;
+    left: 5rem;
+
+    border-radius: 10px;
+    border: 8px double #08558b;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+}
+
+.alert p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: sketchup;
+    src: url('fonts/SKETCHUP\ FREE\ TRIAL.ttf');
+}
+
